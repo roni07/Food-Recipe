@@ -1,0 +1,396 @@
+.container {
+    max-width: 1180px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    width: 100%;
+}
+
+/* ===== Button ==== */
+button.primary-btn, a.primary-btn {
+    position: relative;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000;
+    padding: 13px 34px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: roboto, sans-serif;
+    border-radius: 30px;
+    text-transform: capitalize;
+    text-decoration: none;
+    border: 1px solid #ffc000;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.primary-btn::after, a.primary-btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #ffc000;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 0.3s linear;
+}
+
+button.primary-btn:hover, a.primary-btn:hover {
+    color: #fff;
+}
+
+button.primary-btn:hover::after, a.primary-btn:hover::after {
+    width: 100%;
+}
+
+/* =========== Start Header ========= */
+
+.top-section {
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/header_images/banner.webp');
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    z-index: 99999;
+}
+
+/* ------- Start Navigation ------- */
+
+/*  Start Logo */
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/*  End Logo  */
+
+/* Start ul */
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    padding: 15px 0;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav ul li {
+    position: relative;
+    margin: 0 10px;
+    padding: 10px 0;
+}
+
+.nav ul li i {
+    color: #ffffff;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: roboto, sans-serif;
+}
+
+/* Start Sub-Menu */
+
+.nav ul li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.nav ul li .submenu {
+    position: absolute;
+    display: block;
+    min-width: 200px;
+    top: 110%;
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav ul li .submenu li {
+    padding: 10px;
+    margin: 0;
+}
+
+.nav ul li .submenu li a {
+    color: black;
+}
+
+
+/* End Sub-Menu */
+
+/* End ul */
+
+/* Start Search */
+
+.searchButton {
+    display: flex;
+    align-items: center;
+}
+
+.searchButton a {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/* End Search */
+
+/* ------- End Navigation ------- */
+
+/* ------- Start Text ------ */
+
+.banner {
+    width: 100%;
+    padding-top: 150px;
+}
+
+.single-text {
+    max-width: 767px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.single-text h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 100px;
+    font-family: 'Satisfy';
+    margin: 0;
+}
+
+/* ------- Start Text ------ */
+
+/* ============ End Header ========== */
+
+/* ============ Start Main ========== */
+
+/* ------ Start Recepies ------- */
+
+.recepies-section {
+    padding-top: 100px;
+}
+
+.recepies-section .recepies {
+    display: flex;
+    justify-content: space-around;
+}
+
+.recepies-section .recepie {
+    width: 31.33%;
+    height: 430px;
+    text-align: center;
+    margin: 0  1%;
+    padding: 10px 0;
+}
+
+.recepies-section .recepie .image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.recepies-section .recepies  .recepie .sub-title, .time-text, .recepie-btn {
+    font-family: roboto, sans-serif;
+}
+
+.recepies-section .recepies .recepie .title {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Satisfy';
+    margin-bottom: 40px;
+}
+
+.recepies-section .recepies .recepie .sub-title {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.recepies-section .recepies .recepie .sub-title, .time-text {
+    color: #777;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.recepies-section .recepies .recepie .time-text {
+    margin-bottom: 30px;
+}
+
+
+/* ------ End Recepies ------- */
+
+/* ---- Start Recipe Videos ---- */
+
+.recipe-videos-section {
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+
+.recipe-videos-section .recipe-videos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.recipe-videos-section .video-images {
+    position: relative;
+    padding-top: 0;
+}
+
+.recipe-videos-section .video-image1 {
+    padding-left: 100px;
+}
+
+.recipe-videos-section .video-image2 {
+    position: absolute;
+    top: 68px;
+}
+
+.recipe-videos-section .video-image3 {
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+}
+
+.recipe-videos-section .recipe-videos .vedio-article h3 {
+    font-size: 72px;
+    font-weight: 500;
+    font-family: 'Satisfy';
+}
+
+.recipe-videos-section .recipe-videos .vedio-article p {
+    color:  #777777;
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.recipe-videos-section .vedio-article {
+    flex: 1;
+    margin-top: -75px;
+}
+
+.recipe-videos-section .video-images {
+    flex: 1;
+}
+
+/* ---- End Recipe Videos ---- */
+
+/* ---- Start Catering ---- */
+.catering-section {
+    padding-top: 100px;
+}
+
+.catering-section .catering {
+    display: flex;
+    justify-content: space-around;
+}
+
+.catering-section .catering .catering-item {
+    position: relative;
+    width: 31.33%;
+    height: 320px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 1%;
+    border: 1px solid #777777;
+    border-radius: 5px;
+}
+
+.catering-section .catering .catering-item .thumb {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: -105px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.catering-section .catering .catering-item h3 {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Satisfy';
+    margin-top: 100px;
+}
+
+.catering-section .catering .catering-item p {
+    color:  #777777;
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* ---- End Catering ---- */
+
+/* ---- Start Trending ---- */
+
+.trending-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/tranding_images/banner.webp');
+    margin-top: 100px;
+    padding: 100px 0;
+}
+
+.trending-section .trending-content {
+    text-align: center;
+}
+
+.trending-section .trending-content h3 {
+    font-size: 72px;
+    font-weight: 500;
+    font-family: 'Satisfy';
+    margin-top: 0;
+}
+
+.trending-section .trending-content p {
+    text-transform: uppercase;
+    color: #777777;
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+}
+
+/* ---- End Trending ---- */
+
+
+/* ============ End Main ========== */
+
+.footer-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+}
